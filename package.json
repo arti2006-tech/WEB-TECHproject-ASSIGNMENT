@@ -1,0 +1,15 @@
+{
+  "name": "webtech-assignment",
+  "version": "1.0.0",
+  "description": "Web application with microservices architecture and reverse proxy",
+  "scripts": {
+    "start:auth": "cd auth-service && node server.js",
+    "start:home": "cd home-service && node server.js",
+    "start:gateway": "cd api-gateway && node server.js",
+    "start": "concurrently \"npm run start:auth\" \"npm run start:home\" \"npm run start:gateway\"",
+    "install:all": "cd api-gateway && npm install && cd ../auth-service && npm install && cd ../home-service && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

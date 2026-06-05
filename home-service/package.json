@@ -1,0 +1,9 @@
+{
+  "name": "home-service",
+  "version": "1.0.0",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.22.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
